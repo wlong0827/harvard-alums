@@ -1,0 +1,327 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'request',
+1 verbose cli   'cheerio' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'request', null ]
+7 verbose cache add spec request
+8 silly cache add args [ 'cheerio', null ]
+9 verbose cache add spec cheerio
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'request',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'request',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed request@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for request
+13 info addNameTag [ 'request', 'latest' ]
+14 silly mapToRegistry name request
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/request
+18 verbose addNameTag registry:https://registry.npmjs.org/request not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'cheerio',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'cheerio',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: 'latest',
+19 silly cache add   type: 'tag' }
+20 silly addNamed cheerio@latest
+21 verbose addNamed "latest" is being treated as a dist-tag for cheerio
+22 info addNameTag [ 'cheerio', 'latest' ]
+23 silly mapToRegistry name cheerio
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/cheerio
+27 verbose addNameTag registry:https://registry.npmjs.org/cheerio not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/request
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 12:48:30 AM
+31 verbose request id 08f1de3d3d624498
+32 http request GET https://registry.npmjs.org/request
+33 verbose request uri https://registry.npmjs.org/cheerio
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 12:48:30 AM
+36 verbose etag "DEXLU73LY3QMEC8AEKZYK10YR"
+37 http request GET https://registry.npmjs.org/cheerio
+38 http 304 https://registry.npmjs.org/cheerio
+39 verbose headers { date: 'Mon, 01 Feb 2016 05:48:30 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   etag: '"DEXLU73LY3QMEC8AEKZYK10YR"',
+39 verbose headers   age: '205',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
+39 verbose headers   'x-cache': 'HIT',
+39 verbose headers   'x-cache-hits': '3',
+39 verbose headers   'x-timer': 'S1454305710.887932,VS0,VE0',
+39 verbose headers   vary: 'Accept' }
+40 silly get cb [ 304,
+40 silly get   { date: 'Mon, 01 Feb 2016 05:48:30 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     etag: '"DEXLU73LY3QMEC8AEKZYK10YR"',
+40 silly get     age: '205',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-jfk1030-JFK',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '3',
+40 silly get     'x-timer': 'S1454305710.887932,VS0,VE0',
+40 silly get     vary: 'Accept' } ]
+41 verbose etag https://registry.npmjs.org/cheerio from cache
+42 verbose get saving cheerio to /Users/LongMac/.npm/registry.npmjs.org/cheerio/.cache.json
+43 silly addNameTag next cb for cheerio with tag latest
+44 silly addNamed cheerio@0.19.0
+45 verbose addNamed "0.19.0" is a plain semver version for cheerio
+46 silly cache afterAdd cheerio@0.19.0
+47 verbose afterAdd /Users/LongMac/.npm/cheerio/0.19.0/package/package.json not in flight; writing
+48 verbose afterAdd /Users/LongMac/.npm/cheerio/0.19.0/package/package.json written
+49 http 200 https://registry.npmjs.org/request
+50 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 verbose headers   etag: '"2YUA02USRZCUEA52D0ONFM0N1"',
+50 verbose headers   'content-type': 'application/json',
+50 verbose headers   'cache-control': 'max-age=300',
+50 verbose headers   'content-length': '186010',
+50 verbose headers   'accept-ranges': 'bytes',
+50 verbose headers   date: 'Mon, 01 Feb 2016 05:48:30 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   age: '267',
+50 verbose headers   connection: 'keep-alive',
+50 verbose headers   'x-served-by': 'cache-jfk1025-JFK',
+50 verbose headers   'x-cache': 'HIT',
+50 verbose headers   'x-cache-hits': '12',
+50 verbose headers   'x-timer': 'S1454305710.889153,VS0,VE0',
+50 verbose headers   vary: 'Accept' }
+51 silly get cb [ 200,
+51 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+51 silly get     etag: '"2YUA02USRZCUEA52D0ONFM0N1"',
+51 silly get     'content-type': 'application/json',
+51 silly get     'cache-control': 'max-age=300',
+51 silly get     'content-length': '186010',
+51 silly get     'accept-ranges': 'bytes',
+51 silly get     date: 'Mon, 01 Feb 2016 05:48:30 GMT',
+51 silly get     via: '1.1 varnish',
+51 silly get     age: '267',
+51 silly get     connection: 'keep-alive',
+51 silly get     'x-served-by': 'cache-jfk1025-JFK',
+51 silly get     'x-cache': 'HIT',
+51 silly get     'x-cache-hits': '12',
+51 silly get     'x-timer': 'S1454305710.889153,VS0,VE0',
+51 silly get     vary: 'Accept' } ]
+52 verbose get saving request to /Users/LongMac/.npm/registry.npmjs.org/request/.cache.json
+53 silly addNameTag next cb for request with tag latest
+54 silly addNamed request@2.69.0
+55 verbose addNamed "2.69.0" is a plain semver version for request
+56 silly mapToRegistry name request
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry uri https://registry.npmjs.org/request
+60 verbose addRemoteTarball https://registry.npmjs.org/request/-/request-2.69.0.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.69.0.tgz',
+61 verbose addRemoteTarball   'cf91d2e000752b1217155c005241911991a2346a' ]
+62 info retry fetch attempt 1 at 12:48:31 AM
+63 info attempt registry request try #1 at 12:48:31 AM
+64 http fetch GET https://registry.npmjs.org/request/-/request-2.69.0.tgz
+65 http fetch 200 https://registry.npmjs.org/request/-/request-2.69.0.tgz
+66 silly fetchAndShaCheck shasum cf91d2e000752b1217155c005241911991a2346a
+67 verbose addTmpTarball /var/folders/r8/vwbs35j50t77xvb_tjsqq63r0000gp/T/npm-976-ddd1f1d3/registry.npmjs.org/request/-/request-2.69.0.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for request@2.69.0
+69 silly cache afterAdd request@2.69.0
+70 verbose afterAdd /Users/LongMac/.npm/request/2.69.0/package/package.json not in flight; writing
+71 verbose afterAdd /Users/LongMac/.npm/request/2.69.0/package/package.json written
+72 silly install resolved [ { name: 'cheerio',
+72 silly install resolved     version: '0.19.0',
+72 silly install resolved     description: 'Tiny, fast, and elegant implementation of core jQuery designed specifically for the server',
+72 silly install resolved     author:
+72 silly install resolved      { name: 'Matt Mueller',
+72 silly install resolved        email: 'mattmuelle@gmail.com',
+72 silly install resolved        url: 'mat.io' },
+72 silly install resolved     license: 'MIT',
+72 silly install resolved     keywords: [ 'htmlparser', 'jquery', 'selector', 'scraper', 'parser', 'html' ],
+72 silly install resolved     repository: { type: 'git', url: 'git://github.com/cheeriojs/cheerio.git' },
+72 silly install resolved     main: './index.js',
+72 silly install resolved     engines: { node: '>= 0.6' },
+72 silly install resolved     dependencies:
+72 silly install resolved      { 'css-select': '~1.0.0',
+72 silly install resolved        entities: '~1.1.1',
+72 silly install resolved        htmlparser2: '~3.8.1',
+72 silly install resolved        'dom-serializer': '~0.1.0',
+72 silly install resolved        lodash: '^3.2.0' },
+72 silly install resolved     devDependencies:
+72 silly install resolved      { benchmark: '~1.0.0',
+72 silly install resolved        coveralls: '~2.10',
+72 silly install resolved        'expect.js': '~0.3.1',
+72 silly install resolved        istanbul: '~0.2',
+72 silly install resolved        jsdom: '~0.8.9',
+72 silly install resolved        jshint: '~2.5.1',
+72 silly install resolved        mocha: '*',
+72 silly install resolved        xyz: '~0.5.0' },
+72 silly install resolved     scripts: { test: 'make test' },
+72 silly install resolved     gitHead: '9e3746d391c47a09ad5b130d770c747a0d673869',
+72 silly install resolved     bugs: { url: 'https://github.com/cheeriojs/cheerio/issues' },
+72 silly install resolved     homepage: 'https://github.com/cheeriojs/cheerio',
+72 silly install resolved     _id: 'cheerio@0.19.0',
+72 silly install resolved     _shasum: '772e7015f2ee29965096d71ea4175b75ab354925',
+72 silly install resolved     _from: 'cheerio@latest',
+72 silly install resolved     _npmVersion: '2.7.1',
+72 silly install resolved     _nodeVersion: '1.5.1',
+72 silly install resolved     _npmUser: { name: 'feedic', email: 'me@feedic.com' },
+72 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+72 silly install resolved     dist:
+72 silly install resolved      { shasum: '772e7015f2ee29965096d71ea4175b75ab354925',
+72 silly install resolved        tarball: 'http://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz' },
+72 silly install resolved     directories: {},
+72 silly install resolved     _resolved: 'https://registry.npmjs.org/cheerio/-/cheerio-0.19.0.tgz',
+72 silly install resolved     readme: 'ERROR: No README data found!' },
+72 silly install resolved   { name: 'request',
+72 silly install resolved     description: 'Simplified HTTP request client.',
+72 silly install resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
+72 silly install resolved     version: '2.69.0',
+72 silly install resolved     author: { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+72 silly install resolved     repository:
+72 silly install resolved      { type: 'git',
+72 silly install resolved        url: 'git+https://github.com/request/request.git' },
+72 silly install resolved     bugs: { url: 'http://github.com/request/request/issues' },
+72 silly install resolved     license: 'Apache-2.0',
+72 silly install resolved     engines: { node: '>=0.8.0' },
+72 silly install resolved     main: 'index.js',
+72 silly install resolved     dependencies:
+72 silly install resolved      { 'aws-sign2': '~0.6.0',
+72 silly install resolved        aws4: '^1.2.1',
+72 silly install resolved        bl: '~1.0.0',
+72 silly install resolved        caseless: '~0.11.0',
+72 silly install resolved        'combined-stream': '~1.0.5',
+72 silly install resolved        extend: '~3.0.0',
+72 silly install resolved        'forever-agent': '~0.6.1',
+72 silly install resolved        'form-data': '~1.0.0-rc3',
+72 silly install resolved        'har-validator': '~2.0.6',
+72 silly install resolved        hawk: '~3.1.0',
+72 silly install resolved        'http-signature': '~1.1.0',
+72 silly install resolved        'is-typedarray': '~1.0.0',
+72 silly install resolved        isstream: '~0.1.2',
+72 silly install resolved        'json-stringify-safe': '~5.0.1',
+72 silly install resolved        'mime-types': '~2.1.7',
+72 silly install resolved        'node-uuid': '~1.4.7',
+72 silly install resolved        'oauth-sign': '~0.8.0',
+72 silly install resolved        qs: '~6.0.2',
+72 silly install resolved        stringstream: '~0.0.4',
+72 silly install resolved        'tough-cookie': '~2.2.0',
+72 silly install resolved        'tunnel-agent': '~0.4.1' },
+72 silly install resolved     scripts:
+72 silly install resolved      { test: 'npm run lint && npm run test-ci && npm run test-browser',
+72 silly install resolved        'test-ci': 'taper tests/test-*.js',
+72 silly install resolved        'test-cov': 'istanbul cover tape tests/test-*.js',
+72 silly install resolved        'test-browser': 'node tests/browser/start.js',
+72 silly install resolved        lint: 'eslint lib/ *.js tests/ && echo Lint passed.' },
+72 silly install resolved     devDependencies:
+72 silly install resolved      { bluebird: '^3.0.2',
+72 silly install resolved        browserify: '^13.0.0',
+72 silly install resolved        'browserify-istanbul': '^0.1.5',
+72 silly install resolved        'buffer-equal': '^1.0.0',
+72 silly install resolved        'codecov.io': '^0.1.6',
+72 silly install resolved        coveralls: '^2.11.4',
+72 silly install resolved        eslint: '1.10.3',
+72 silly install resolved        'function-bind': '^1.0.2',
+72 silly install resolved        istanbul: '^0.4.0',
+72 silly install resolved        karma: '^0.13.10',
+72 silly install resolved        'karma-browserify': '^4.4.0',
+72 silly install resolved        'karma-cli': '^0.1.1',
+72 silly install resolved        'karma-coverage': '^0.5.3',
+72 silly install resolved        'karma-phantomjs-launcher': '^0.1.4',
+72 silly install resolved        'karma-tap': '^1.0.3',
+72 silly install resolved        rimraf: '^2.2.8',
+72 silly install resolved        'server-destroy': '^1.0.1',
+72 silly install resolved        tape: '^4.2.0',
+72 silly install resolved        taper: '^0.4.0' },
+72 silly install resolved     gitHead: '1c2fb40c74efb4f706f350a78dbd5e58fe913af3',
+72 silly install resolved     homepage: 'https://github.com/request/request#readme',
+72 silly install resolved     _id: 'request@2.69.0',
+72 silly install resolved     _shasum: 'cf91d2e000752b1217155c005241911991a2346a',
+72 silly install resolved     _from: 'request@latest',
+72 silly install resolved     _npmVersion: '2.14.4',
+72 silly install resolved     _nodeVersion: '4.1.2',
+72 silly install resolved     _npmUser: { name: 'mikeal', email: 'mikeal.rogers@gmail.com' },
+72 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+72 silly install resolved     dist:
+72 silly install resolved      { shasum: 'cf91d2e000752b1217155c005241911991a2346a',
+72 silly install resolved        tarball: 'http://registry.npmjs.org/request/-/request-2.69.0.tgz' },
+72 silly install resolved     directories: {},
+72 silly install resolved     _resolved: 'https://registry.npmjs.org/request/-/request-2.69.0.tgz' } ]
+73 info install cheerio@0.19.0 into /usr/local/lib
+74 info install request@2.69.0 into /usr/local/lib
+75 info installOne cheerio@0.19.0
+76 verbose installOne of cheerio to /usr/local/lib not in flight; installing
+77 info installOne request@2.69.0
+78 verbose installOne of request to /usr/local/lib not in flight; installing
+79 verbose lock using /Users/LongMac/.npm/_locks/cheerio-9f042dee98cb679d.lock for /usr/local/lib/node_modules/cheerio
+80 verbose lock using /Users/LongMac/.npm/_locks/request-dc3502d0dc58f545.lock for /usr/local/lib/node_modules/request
+81 silly install write writing cheerio 0.19.0 to /usr/local/lib/node_modules/cheerio
+82 silly install write writing request 2.69.0 to /usr/local/lib/node_modules/request
+83 verbose unbuild lib/node_modules/cheerio
+84 verbose unbuild lib/node_modules/request
+85 silly gentlyRm /usr/local/lib/node_modules/cheerio is being purged from base /usr/local
+86 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cheerio
+87 silly gentlyRm /usr/local/lib/node_modules/request is being purged from base /usr/local
+88 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/request
+89 verbose tar unpack /Users/LongMac/.npm/cheerio/0.19.0/package.tgz
+90 verbose tar unpacking to /usr/local/lib/node_modules/cheerio
+91 silly gentlyRm /usr/local/lib/node_modules/cheerio is being purged
+92 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cheerio
+93 verbose tar unpack /Users/LongMac/.npm/request/2.69.0/package.tgz
+94 verbose tar unpacking to /usr/local/lib/node_modules/request
+95 silly gentlyRm /usr/local/lib/node_modules/request is being purged
+96 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/request
+97 silly gunzTarPerm modes [ '755', '644' ]
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 error tar.unpack untar error /Users/LongMac/.npm/request/2.69.0/package.tgz
+100 error tar.unpack untar error /Users/LongMac/.npm/cheerio/0.19.0/package.tgz
+101 verbose unlock done using /Users/LongMac/.npm/_locks/request-dc3502d0dc58f545.lock for /usr/local/lib/node_modules/request
+102 verbose unlock done using /Users/LongMac/.npm/_locks/cheerio-9f042dee98cb679d.lock for /usr/local/lib/node_modules/cheerio
+103 verbose fstream_path /usr/local/lib/node_modules/request
+104 verbose fstream_type Directory
+105 verbose fstream_class DirWriter
+106 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/request'
+106 verbose stack     at Error (native)
+107 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+107 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+107 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+108 verbose cwd /Users/LongMac/Desktop/harvard-alum
+109 error Darwin 15.4.0
+110 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "request" "cheerio"
+111 error node v4.2.4
+112 error npm  v2.14.12
+113 error path /usr/local/lib/node_modules/request
+114 error code EACCES
+115 error errno -13
+116 error syscall mkdir
+117 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/request'
+117 error     at Error (native)
+117 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/request']
+117 error   errno: -13,
+117 error   code: 'EACCES',
+117 error   syscall: 'mkdir',
+117 error   path: '/usr/local/lib/node_modules/request',
+117 error   fstream_type: 'Directory',
+117 error   fstream_path: '/usr/local/lib/node_modules/request',
+117 error   fstream_class: 'DirWriter',
+117 error   fstream_stack:
+117 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+117 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+117 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+118 error Please try running this command again as root/Administrator.
+119 verbose exit [ -13, true ]
+120 verbose unbuild lib/node_modules/request
+121 silly gentlyRm /usr/local/lib/node_modules/request is being purged from base /usr/local
+122 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/request
+123 verbose unbuild lib/node_modules/cheerio
+124 silly gentlyRm /usr/local/lib/node_modules/cheerio is being purged from base /usr/local
+125 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cheerio
