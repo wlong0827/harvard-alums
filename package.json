@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wlong0827/harvard-alums/issues"
   },
-  "homepage": "https://github.com/wlong0827/harvard-alums#readme"
+  "homepage": "https://github.com/wlong0827/harvard-alums#readme",
+  "dependencies": {
+    "phantom": "^0.8.4"
+  }
 }
