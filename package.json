@@ -1,0 +1,19 @@
+{
+  "name": "harvard-alums",
+  "version": "1.0.0",
+  "description": "Will Long & Rachel Gologorsky project to make it easier to use the Harvard Alumns Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlong0827/harvard-alums.git"
+  },
+  "author": "Will Long & Rachel Gologorsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlong0827/harvard-alums/issues"
+  },
+  "homepage": "https://github.com/wlong0827/harvard-alums#readme"
+}
