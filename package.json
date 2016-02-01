@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/wlong0827/harvard-alums#readme",
   "dependencies": {
-    "phantom": "^0.8.4"
+    "cheerio": "^0.19.0",
+    "phantom": "^0.8.4",
+    "request": "^2.69.0",
+    "selenium-webdriver": "^2.48.2"
   }
 }
