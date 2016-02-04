@@ -18,28 +18,31 @@ var client = webdriverio.remote(options);
 
 request('https://community.alumni.harvard.edu/', function (error, response, html) {
   if (!error && response.statusCode == 200) {
-    console.log(html);
+    //console.log(html);
   }
 
 
 });
 
-
+client
+    .url('http://google.com')
+    .setValue('#q', 'webdriver')
+    .click('#btnG');
 //
 
-username = ''
-password = ''
+// username = ''
+// password = ''
 
 
-driver = webdriver.Firefox()
-driver.get('https://webapps.fas.harvard.edu/course_evaluation_reports/fas/course_summary.html?course_id=' + str(i))
-if driver.title == 'HarvardKey Login':
-    user = driver.find_element_by_name('username')
-    user.send_keys(username)
-    pw = driver.find_element_by_name('password')
-    pw.send_keys(password)
-    pw.send_keys(Keys.RETURN)
+// driver = webdriver.Firefox()
+// driver.get('https://webapps.fas.harvard.edu/course_evaluation_reports/fas/course_summary.html?course_id=' + str(i))
+// if driver.title == 'HarvardKey Login':
+//     user = driver.find_element_by_name('username')
+//     user.send_keys(username)
+//     pw = driver.find_element_by_name('password')
+//     pw.send_keys(password)
+//     pw.send_keys(Keys.RETURN)
 
-try:
-    el = driver.find_element_by_id('summaryStats') #trigger exception if not found
-    element = WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "reportContent")))
+// try:
+//     el = driver.find_element_by_id('summaryStats') #trigger exception if not found
+//     element = WebDriverWait(driver, 2).until(EC.presence_of_element_located((By.ID, "reportContent")))
