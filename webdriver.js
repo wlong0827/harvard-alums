@@ -11,7 +11,7 @@ var driver = new webdriver.Builder()
     .withCapabilities(webdriver.Capabilities.chrome())
     .build();
 
-driver.get('http://www.google.com');
+driver.get('https://www.pin1.harvard.edu/cas/login?service=https%3A%2F%2Fcommunity.alumni.harvard.edu%2Flogin%2Fcas');
 driver.findElement(webdriver.By.name('q')).sendKeys('webdriver');
 driver.findElement(webdriver.By.name('btnG')).click();
 driver.wait(function() {
